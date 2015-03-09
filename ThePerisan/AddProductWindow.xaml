@@ -1,0 +1,38 @@
+﻿<Window x:Class="ThePerisan.AddProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="הזנת מוצר" Height="300" Width="300">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFD66A09" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="הפרסי" HorizontalAlignment="Left" Margin="89,0,0,0" VerticalAlignment="Top" FontSize="55" FontWeight="Bold" FontFamily="Guttman Haim">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE9AD63" Offset="0"/>
+                    <GradientStop Color="#FF985400" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content=":הזן מוצר שמצאת" HorizontalAlignment="Left" Margin="161,63,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content=":שם המוצר" HorizontalAlignment="Left" Margin="204,92,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content=":מחירו" HorizontalAlignment="Left" Margin="233,126,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content=":איפה" HorizontalAlignment="Left" Margin="233,160,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Button Name="AddProductBTN" Content="הזן מוצר" HorizontalAlignment="Left" Margin="89,200,0,0" VerticalAlignment="Top" Width="127" Height="34" FontSize="16" FontFamily="Segoe WP Black" Foreground="White" BorderBrush="#FFDDDDDD" Click="AddProductBTN_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEFCB87" Offset="1"/>
+                    <GradientStop Color="#FFD78A00" Offset="0.041"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="backToMenuBTN" Content="חזור לדף הבית" HorizontalAlignment="Left" Margin="113,239,0,0" VerticalAlignment="Top" Width="78" Height="22" FontSize="10" FontFamily="Segoe WP Black" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Click="backToMenuBTN_Click"/>
+        <TextBox Name="productNameTXT" HorizontalAlignment="Left" HorizontalContentAlignment="Right" FontSize="14" Height="23" Margin="84,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFFF8200"/>
+        <TextBox Name="productPriceTXT" HorizontalAlignment="Left" HorizontalContentAlignment="Right" FontSize="14" Height="23" Margin="113,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFFF8200"/>
+        <TextBox Name="productPlaceTXT" HorizontalAlignment="Left" HorizontalContentAlignment="Right" FontSize="14" Height="23" Margin="113,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFFF8200"/>
+
+    </Grid>
+</Window>

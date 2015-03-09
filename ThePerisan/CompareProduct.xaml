@@ -1,0 +1,32 @@
+﻿<Window x:Class="ThePerisan.CompareProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="השוואת מוצר" Height="300" Width="300">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFD66A09" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="הפרסי" HorizontalAlignment="Left" Margin="68,10,0,0" VerticalAlignment="Top" FontSize="55" FontWeight="Bold" FontFamily="Guttman Haim">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE9AD63" Offset="0"/>
+                    <GradientStop Color="#FF985400" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="?מה ברצונך להשוות" HorizontalAlignment="Left" Margin="89,89,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Foreground="#FFDF6300"/>
+        <Button Name="SearchProductBTN" Content="השווה מוצר" HorizontalAlignment="Left" Margin="89,190,0,0" VerticalAlignment="Top" Width="127" Height="34" FontSize="16" FontFamily="Segoe WP Black" Foreground="White" BorderBrush="#FFDDDDDD" Click="SearchProductBTN_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEFCB87" Offset="1"/>
+                    <GradientStop Color="#FFD78A00" Offset="0.041"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="backToMenuBTN" Content="חזור לדף הבית" HorizontalAlignment="Left" Margin="113,239,0,0" VerticalAlignment="Top" Width="78" Height="22" FontSize="10" FontFamily="Segoe WP Black" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Click="backToMenuBTN_Click"/>
+        <TextBox Name="productCompareTXT" HorizontalAlignment="Left" HorizontalContentAlignment="Right" FontSize="18" Height="42" Margin="49,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" BorderBrush="#FFFF8200"/>
+    </Grid>
+</Window>
