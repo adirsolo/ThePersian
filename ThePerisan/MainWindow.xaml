@@ -33,6 +33,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Button x:Name="backToLogInBTN" Content="התנתק מהמערכת" HorizontalAlignment="Left" Margin="104,289,0,0" VerticalAlignment="Top" Width="91" Height="22" FontSize="10" FontFamily="Segoe WP Black" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Click="backToLogInBTN_Click"/>
 
     </Grid>
 </Window>

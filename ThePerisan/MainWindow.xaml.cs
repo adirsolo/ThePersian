@@ -52,5 +52,12 @@ namespace ThePerisan
             CompareProduct cp = new CompareProduct(_userName);
             cp.ShowDialog();
         }
+
+        private void backToLogInBTN_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            LogInWindow liw = new LogInWindow();
+            liw.ShowDialog();
+        }
     }
 }
