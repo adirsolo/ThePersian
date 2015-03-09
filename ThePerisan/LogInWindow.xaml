@@ -28,7 +28,7 @@
             </Button.Background>
         </Button>
         <TextBox Name="userNameTXT" HorizontalAlignment="Left" Height="23" Margin="23,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" BorderBrush="#FFFF8200"/>
-        <TextBox Name="passwordTXT" HorizontalAlignment="Left" Height="23" Margin="23,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" BorderBrush="#FFFF8200"/>
+        <PasswordBox Name="passwordTXT" PasswordChar="*" HorizontalAlignment="Left" Height="23" Margin="23,126,0,0" VerticalAlignment="Top" Width="181" BorderBrush="#FFFF8200"/>
 
     </Grid>
 </Window>

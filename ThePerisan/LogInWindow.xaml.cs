@@ -57,7 +57,7 @@ namespace ThePerisan
         private void LogInBTN_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            _vm.checkIfUserOK(userNameTXT.Text, passwordTXT.Text);
+            _vm.checkIfUserOK(userNameTXT.Text, passwordTXT.Password);
             if (isUserExsit)
             {
                 MainWindow mw = new MainWindow(userNameTXT.Text);
