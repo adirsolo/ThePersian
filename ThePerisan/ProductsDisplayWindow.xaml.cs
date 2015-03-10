@@ -35,7 +35,7 @@ namespace ThePerisan
         {
             InitializeComponent();
             _userName = userName;
-            headline.Text = productName + " מציג מחירים ומקומות אפשריים עבור";
+            headline.Text = "מציג מחירים ומקומות אפשריים עבור " + productName;
             foreach (DataRow dr in dtToShow.Rows)
                {
                    lst.Items.Add(dr["Price"].ToString() + "                          " + dr["Place"].ToString());
